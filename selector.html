@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            div p {
+                  color: burlywood;
+            } /*descendent selector(space) */
+
+            div > p {
+                  font-style: italic;
+                  font-weight: bold;
+            } /*child selector (>) */
+
+            div + p {
+
+                  color:crimson;
+            } /*asjacent sibling selector(+)*/
+
+            div ~ p {
+                  font-size : 20px;
+            } /*general sibling selector(~)*/
+
+            
+      </style>
+</head>
+<body>
+      <div>
+            <p>He is one.</p>
+            <p>She is two.</p>
+            <section><p>He is three.</p></section>
+      </div>
+      <p>He is four.</p>
+      <p>He is five.</p>
+</body>
+</html>
